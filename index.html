@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculatrice</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <header>
+            <h1>CALCULATRICE</h1>
+        </header>
+        <main>
+            <section>
+                <article class="ligne_egale">
+                    <button id="bouton_egale" class="bouton_egale" type="button">
+                        =
+                    </button>
+                </article>
+                <article class="ligne_1">
+                    <button id="bouton_vir" type="button">
+                        .
+                    </button>
+                    <button id="bouton0" class="bouton0" type="button" onkeypress="bouton0(0)">
+                        0
+                    </button>
+                    <button class="boutonC" id="boutonC" type="button">
+                        C
+                    </button>
+                    <button class="ope" id="bouton_plus" type="button">
+                        +
+                    </button>
+                </article>
+                <article class="ligne_2">
+                    <button id="bouton1" type="button">
+                        1
+                    </button>
+                    <button id="bouton2" type="button">
+                        2
+                    </button>
+                    <button id="bouton3" type="button">
+                        3
+                    </button>
+                    <button class="ope" id="bouton_moins" type="button">
+                        -
+                    </button>
+                </article>
+                <article class="ligne_3">
+                    <button id="bouton4" type="button">
+                        4
+                    </button>
+                    <button id="bouton5" type="button">
+                        5
+                    </button>
+                    <button id="bouton6" type="button">
+                        6
+                    </button>
+                    <button class="ope" id="bouton_fois" type="button">
+                        *
+                    </button>
+                </article>
+                <article class="ligne_4">
+                    <button id="bouton7" type="button">
+                        7
+                    </button>
+                    <button id="bouton8" type="button">
+                        8
+                    </button>
+                    <button id="bouton9" type="button">
+                        9
+                    </button>
+                    <button class="ope" id="bouton_divise" type="button">
+                        /
+                    </button>
+                </article>
+                <article class="ligne_0">
+                    <form>
+                        <input id="texte" type="text" name="calcul" required minlength="3" maxlength="12" size="10">
+                    </form>
+                </article>
+            </section>
+            <section class="aside">
+                <aside>
+                    <h3>Consigne</h3>
+                    <hr/>
+                    <pre>
+      Utiliser le format :
+  nombre - operation - nombre
+
+            <strong>Exemple :</strong>
+
+            12 + 30
+            98 - 56
+            37 * 18
+           27972 / 42
+           16.5*40.4
+                    </pre>
+                </aside>
+        </section>
+        </main>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/bouton0.js"></script>
+    <script src="scripts/bouton1.js"></script>
+    <script src="scripts/bouton2.js"></script>
+    <script src="scripts/bouton3.js"></script>
+    <script src="scripts/bouton4.js"></script>
+    <script src="scripts/bouton5.js"></script>
+    <script src="scripts/bouton6.js"></script>
+    <script src="scripts/bouton7.js"></script>
+    <script src="scripts/bouton8.js"></script>
+    <script src="scripts/bouton9.js"></script>
+    <script src="scripts/boutonC.js"></script>
+    <script src="scripts/bouton_plus.js"></script>
+    <script src="scripts/bouton_moins.js"></script>
+    <script src="scripts/bouton_fois.js"></script>
+    <script src="scripts/bouton_divise.js"></script>
+    </body>
+</html>
